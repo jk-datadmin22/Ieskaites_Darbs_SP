@@ -1,7 +1,7 @@
 import requests
 import time
 
-ADRESE = "https://www.latloto.lv/lv/rezultati/superbingo/1147530"
+ADRESE = "https://www.latloto.lv/lv/rezultati/superbingo/1147512"
 
 def saglabat_lapu(adrese, fails):
     pieprasijums = requests.get(adrese)
@@ -16,30 +16,29 @@ def saglabat_lapu(adrese, fails):
         print("radās kļūda", pieprasijums.status_code)
         return
 
-saglabat_lapu(ADRESE, "Ieskaites_Darbs_SP/tree/main/Lapas/lapa_1.html") 
+saglabat_lapu(ADRESE, "Superbingo/Lapas/lapa_10.html") 
 
 # eeeeeeeeee
 
-# ADRESE = "https://www.ss.com/lv/transport/cars/today/"
+# ADRESE = "https://www.latloto.lv/lv/rezultati/superbingo/"
 
 # def atvilkt_lapas(daudzums):
-#     for i in range(1, daudzums + 1):
+#     for i in range(1, daudzums - 2):
 #         adrese = f"{ADRESE}page{i}.html"
-#         fails = f"7diena/requests/lapas/lapa_{i}.html"
+#         fails = f"Superbingo/lapas/lapa_{i}.html"
 
 #         print("Pieprasijums uz", adrese, "---.",  fails)
 #         saglabat_lapu(adrese, fails)
 
 #         time.sleep(2)
 
-# atvilkt_lapas(46)
+# atvilkt_lapas(10)
 
 # def info(htmlDatne):
 #     with open(htmlDatne, "r", encoding="utf-8") as fails:
 #         html = fails.read()
 
 #         print(html)
-
 
 # def info(htmlDatne):
 #     with open(htmlDatne, "r", encoding="utf-8") as fails:
