@@ -27,7 +27,7 @@ saglabat_lapu(ADRESE, "Superbingo/Lapas/lapa_10.html")
 #         adrese = f"{ADRESE}page{i}.html"
 #         fails = f"Superbingo/lapas/lapa_{i}.html"
 
-#         print("Pieprasijums uz", adrese, "---.",  fails)
+#         print("Pieprasijums uz", adrese, "--->.",  fails)
 #         saglabat_lapu(adrese, fails)
 
 #         time.sleep(2)
