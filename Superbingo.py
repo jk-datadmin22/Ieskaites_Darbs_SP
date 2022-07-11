@@ -16,7 +16,7 @@ def saglabat_lapu(adrese, fails):
         print("radās kļūda", pieprasijums.status_code)
         return
 
-saglabat_lapu(ADRESE, "Ieskaites_Darbs_SP/lapas/lapa_1.html") 
+saglabat_lapu(ADRESE, "Ieskaites_Darbs_SP/tree/main/Lapas/lapa_1.html") 
 
 # eeeeeeeeee
 
