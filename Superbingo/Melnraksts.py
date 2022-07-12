@@ -66,6 +66,27 @@ import csv
 
         # print(html)
 
+# from bs4 import BeautifulSoup
+
+#  print("=================================")
+
+# html = """<div class="section-heading-page">
+#   <div class="container">
+    
+#   </div>
+# </div>
+# <div class="container"><p>Hello 1</p><p>Hello 2</p></div>"""
+
+# soup = BeautifulSoup(html, 'html.parser')
+# div_2 = soup.find_all('div', attrs={'class': 'container'})[1]
+
+# for p in div_2.find_all("p"):
+#     print(p.text)    # Display the text inside any p tag
+
+# info("Superbingo/Lapas/lapa_1.html")
+
+#  print("=================================")
+
 from bs4 import BeautifulSoup
 def info(htmlDatne):
     with open(htmlDatne, "r", encoding="utf-8") as fails:
