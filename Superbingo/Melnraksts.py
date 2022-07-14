@@ -1,3 +1,4 @@
+from cgitb import html
 import requests
 import time
 from bs4 import BeautifulSoup as bs
@@ -70,7 +71,7 @@ import csv
 
 #  print("=================================")
 
-# html = """<div class="section-heading-page">
+# html = """<div class="numbered-items numbered-items-purple margin-bottom-5">
 #   <div class="container">
     
 #   </div>
@@ -87,12 +88,30 @@ import csv
 
 #  print("=================================")
 
-from bs4 import BeautifulSoup
-def info(htmlDatne):
-    with open(htmlDatne, "r", encoding="utf-8") as fails:
-        html = fails.read()
+# from bs4 import BeautifulSoup
 
-    soup = BeautifulSoup(html, "html.parser")
-    results = soup.find_all(div_class_ = "1. Centrs")
+# def info(htmlDatne):
+#     with open(htmlDatne, "r", encoding="utf-8") as fails:
+#         html = fails.read()
+
+#         soup = BeautifulSoup(html, "html.parser")
+#         elements = soup.find_all (div class = "numbered-items-purple margin-bottom-5")
+    
+#     print(fails.read)
+
+
+# info("Superbingo/Lapas/lapa_1.html")
+
+def info(htmlDatne):
+    with open(htmlDatne, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    zupa = bs(html, "html.parser")
+
+    cipari = zupa.find_all("<div class = numbered-items numbered-items-purple margin-bottom-5>")
+    
+    for saraksts in cipari:
+        print(saraksts)
+        print("=================")
 
 info("Superbingo/Lapas/lapa_1.html")
