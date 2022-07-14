@@ -108,10 +108,14 @@ def info(htmlDatne):
 
     zupa = bs(html, "html.parser")
 
-    cipari = zupa.find_all("<div class = numbered-items numbered-items-purple margin-bottom-5>")
+    cipari = zupa.find_all("numbered-items numbered-items-purple margin-bottom-5")
     
     for saraksts in cipari:
         print(saraksts)
+    
+        print("=================")
+        print("=================")
+        print("=================")
         print("=================")
 
 info("Superbingo/Lapas/lapa_1.html")
