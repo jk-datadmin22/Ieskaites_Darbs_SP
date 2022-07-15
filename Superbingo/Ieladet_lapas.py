@@ -1,3 +1,4 @@
+from cgitb import html
 import requests
 import time
 from bs4 import BeautifulSoup as bs

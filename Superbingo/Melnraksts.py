@@ -28,7 +28,7 @@ import csv
 # import requests
 # import time
 
-# ADRESE = "https://www.latloto.lv/lv/rezultati/superbingo/"
+# ADRESE = "https://www.latloto.lv/lv/rezultati/superbingo/1147530"
 
 # def atvilkt_lapas(daudzums):
 #     for i in range(1147530, daudzums - 2):
@@ -119,3 +119,12 @@ def info(htmlDatne):
         print("=================")
 
 info("Superbingo/Lapas/lapa_1.html")
+info("Superbingo/Lapas/lapa_2.html")
+info("Superbingo/Lapas/lapa_3.html")
+info("Superbingo/Lapas/lapa_4.html")
+info("Superbingo/Lapas/lapa_5.html")
+info("Superbingo/Lapas/lapa_6.html")
+info("Superbingo/Lapas/lapa_7.html")
+info("Superbingo/Lapas/lapa_8.html")
+info("Superbingo/Lapas/lapa_9.html")
+info("Superbingo/Lapas/lapa_10.html")
