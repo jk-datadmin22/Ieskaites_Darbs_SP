@@ -15,10 +15,6 @@ def info(htmlDatne):
     for saraksts in cipari:
         print(saraksts)
     
-        print("=================")
-        print("=================")
-        print("=================")
-        print("=================")
 
 info("Superbingo/Lapas/lapa_1.html")
 info("Superbingo/Lapas/lapa_2.html")
