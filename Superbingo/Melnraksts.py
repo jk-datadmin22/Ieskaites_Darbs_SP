@@ -1,4 +1,6 @@
+from cgi import print_arguments
 from cgitb import html
+from numpy import append
 import requests
 import time
 from bs4 import BeautifulSoup as bs
@@ -117,11 +119,14 @@ def info(htmlDatne):
     for saraksts in cipari:
         print(saraksts)
 
-    sys.stdout = open('output.txt','w')
-    print (saraksts)
-    
-    return zupa 
-    sys.stdout.close()     
+        sys.stdout = open('output.csv','w')
+        print (saraksts)
+        append (saraksts)
+    sys.stdout.close()    # sys.stdout = open('output.csv','w')
+        
+    # return cipari 
+    # sys.stdout.close()
+   
 
 info("Superbingo/Lapas/lapa_1.html")
 info("Superbingo/Lapas/lapa_2.html")
@@ -133,6 +138,12 @@ info("Superbingo/Lapas/lapa_7.html")
 info("Superbingo/Lapas/lapa_8.html")
 info("Superbingo/Lapas/lapa_9.html")
 info("Superbingo/Lapas/lapa_10.html")
+
+
+# for saraksts in cipari:
+    
+
+# interval_1_16++;
 
 # sys.stdout = open('output.txt','w')
 # print (saraksts)
