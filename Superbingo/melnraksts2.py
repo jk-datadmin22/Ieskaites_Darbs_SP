@@ -20,17 +20,7 @@ def info(htmlDatne):
     cipari = zupa.find_all("div", class_ ="numbered-items numbered-items-purple margin-bottom-5")
     
     for saraksts in cipari:
-        # print (saraksts)
-
-    # skaitli =saraksts    
-    # for skaitli in range(1, 75):
-    #     print(skaitli)
-
-        sys.stdout = open('output.csv','a')
-        print(saraksts)
-    
-    # sys.stdout.close()
-    
+        print (saraksts.text)
 
 info("Superbingo/Lapas/lapa_1.html")
 info("Superbingo/Lapas/lapa_2.html")
@@ -43,6 +33,11 @@ info("Superbingo/Lapas/lapa_8.html")
 info("Superbingo/Lapas/lapa_9.html")
 info("Superbingo/Lapas/lapa_10.html")
 
+    # skaitli =saraksts    
+    # for skaitli in range(1, 75):
+    #     print(skaitli)
 
-
-# sys.stdout.close()
+        # sys.stdout = open('output.csv','a')
+        # print(saraksts)
+    
+    # sys.stdout.close()
