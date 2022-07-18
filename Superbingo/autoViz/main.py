@@ -2,7 +2,7 @@ from autoviz.AutoViz_Class import AutoViz_Class
 
 AV = AutoViz_Class()
 
-filename = "Ieskaites_Darbs_SP/titanic_1.csv"
+filename = "superbingo/reitings_skaitli1.csv"
 
 data = AV.AutoViz(
     filename,
